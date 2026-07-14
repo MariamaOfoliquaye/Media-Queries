@@ -82,4 +82,11 @@ Do not delete any of the above code. */
     color: black;
   }
 }
+
+@media screen and (max-width: 786px) {
+  .light-box{
+    background-color: green;
+    color: beige;
+  }
+}
   
