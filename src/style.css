@@ -67,7 +67,7 @@ body {
 /* Please write your responsive codes after this comment.
 Do not delete any of the above code. */
 
-part 1 of C1 achieved
+/* part 1 of C1 achieved */
 .light-box{
   background-color: red;
   color: whitesmoke;
@@ -75,3 +75,11 @@ part 1 of C1 achieved
   text-align: center;
   border-radius: 8px;
 }
+
+@media screen and(max-width: 991px){
+  .light-box {
+    background-color: yellow;
+    color: black;
+  }
+}
+  
