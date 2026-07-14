@@ -89,67 +89,69 @@ Do not delete any of the above code. */
   border-radius: 8px;
 }
 
-@media screen and(max-width: 991px){
-  .light-box {
+/* C5side by side view on your desktop */
+.layout-wrapper{
+  display: flex;
+  gap: 20px;
+}
+
+.main-content{
+  background-color: #3498db;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 8px;
+}
+
+.sidebar{
+  background-color: cadetblue;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 8px;
+}
+
+/* Styling for tablet */
+@media screen and (max-width: 991px){
+  .light-box{
     background-color: yellow;
-    color: black;
+    color: #2ced50;
   }
 }
+
 /* styling for mobile */
 @media screen and (max-width: 786px) {
   /* C1 styling for mobile */
   .light-box{
     background-color: green;
-    color: beige;
-
-
+    color: white;
   }
 
   /* C2 styling for mobile */
   .layout-wrapper {
     flex-direction: column;
+  }
 
-    .hamburger-icon {
+  .hamburger-icon{
       display: block;
     }
+
     .nav-links {
       display: none;
       background-color: #34495e;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding: 10px 0px;
+      width: 150px;
     }
+
+    .nav-links li{
+      margin: 10px 0px ;
+    }
+
 .menu-container:hover .nav-links{
   display: flex;
   flex-direction: column;
+   }
 }
-
-
-
-
-
-
-
-  }
-}
-/* C2: side by side view on desktop */
-.layout-wrapper {
-  display: flex;
-  gap: 20px;
-
-}
-
-.main-content {
-  background-color: #3498db;
-  padding: 20px;
-  color: beige;
-  text-shadow: 2px 2px 5px black;
-  border-radius: 8px;
-
-}
-.sidebar {
-  background-color: cadetblue;
-  padding: 20px;
-  color: beige;
-   text-shadow: 2px 2px 5px black;
-    border-radius: 8px;
-
-}
-  
