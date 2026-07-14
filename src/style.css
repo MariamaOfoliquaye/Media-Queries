@@ -40,8 +40,8 @@ body {
 
 /* Hidden by default on desktop screens */
 .hamburger-icon {
-  display: none;
-  color: white;
+  /* display: none; */
+  color: rgb(172, 138, 138);
   font-size: 2rem;
   cursor: pointer;
 }
@@ -51,7 +51,20 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  padding: 10px 0px;
+  width: 150px;
+
+
 }
+
+
+.nav-links li {
+  margin: 10px 0px;
+}
+
 
 .nav-links li a {
   display: block;
@@ -95,6 +108,25 @@ Do not delete any of the above code. */
   /* C2 styling for mobile */
   .layout-wrapper {
     flex-direction: column;
+
+    .hamburger-icon {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      background-color: #34495e;
+    }
+.menu-container:hover .nav-links{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
   }
 }
 /* C2: side by side view on desktop */
